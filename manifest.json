@@ -4,10 +4,10 @@
   "version": "1.0",
   "description": "自定义新标签页",
   "icons": {
-    "16": "Fast.svg",
-    "32": "Fast.svg",
-    "48": "Fast.svg",
-    "128": "Fast.svg"
+    "16": "icon16.png",
+    "32": "icon32.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
   },
   "chrome_url_overrides": {
     "newtab": "index.html"

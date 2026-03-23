@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>新标签页</title>
-  <link rel="icon" type="image/png" href="Fast.svg"/>
+  <link rel="icon" type="image/png" href="icon32.png"/>
 
   <style>
     * {margin:0;padding:0;box-sizing:border-box;}
@@ -48,62 +48,6 @@
       border-color:#eee;
       transform:scale(1.02);
     }
-
-    #bgPanel{
-      position:fixed;
-      bottom:80px;
-      right:24px;
-      width:320px;
-      background:#fff;
-      border-radius:16px;
-      box-shadow:0 4px 20px #00000020;
-      padding:16px;
-      display:none;
-      z-index:99999;
-    }
-    #bgPanel.show{
-      display:block;
-    }
-    .thumbnails{
-      display:grid;
-      grid-template-columns:repeat(3,1fr);
-      gap:8px;
-      margin-bottom:12px;
-      max-height:220px;
-      overflow-y:auto;
-    }
-    .thumb{
-      width:100%;
-      aspect-ratio:16/9;
-      border-radius:8px;
-      object-fit:cover;
-      cursor:pointer;
-      border:2px solid transparent;
-    }
-    .thumb.active{
-      border-color:#4285f4;
-    }
-
-    #changeBg{
-      position:fixed;
-      bottom:20px;
-      right:24px;
-      background:#ffffffcc;
-      border:none;
-      border-radius:8px;
-      padding:8px 12px;
-      cursor:pointer;
-      z-index:9999;
-    }
-    .addBtn{
-      width:100%;
-      padding:10px;
-      border-radius:10px;
-      border:none;
-      background:#f1f3f4;
-      cursor:pointer;
-      margin-top:8px;
-    }
   </style>
 </head>
 <body>
@@ -114,13 +58,6 @@
     <input autocomplete="off" name="q" placeholder="使用 Bing 搜索"/>
   </form>
 </div>
-
-<div id="bgPanel">
-  <div class="thumbnails" id="thumbList"></div>
-  <button id="addBtn" class="addBtn">添加图片链接</button>
-</div>
-
-<button id="changeBg">换壁纸</button>
 
 <script src="app.js"></script>
 </body>
