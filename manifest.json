@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "新标签页",
+  "version": "1.0",
+  "description": "自定义新标签页",
+  "icons": {
+    "16": "Fast.svg",
+    "32": "Fast.svg",
+    "48": "Fast.svg",
+    "128": "Fast.svg"
+  },
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}
